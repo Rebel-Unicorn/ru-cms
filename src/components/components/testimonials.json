@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_components_testimonials",
+  "info": {
+    "displayName": "TestimonialsSection",
+    "icon": "bell",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "testimonialsCTA": {
+      "type": "component",
+      "repeatable": false,
+      "component": "components.button"
+    },
+    "pageTitle": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_landing_page_learn_more_sections",
+  "info": {
+    "displayName": "LearnMoreSection",
+    "icon": "pinMap"
+  },
+  "options": {},
+  "attributes": {
+    "sectionTitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "text"
+    },
+    "officeAddress": {
+      "type": "component",
+      "repeatable": false,
+      "component": "components.address"
+    },
+    "privacy": {
+      "type": "component",
+      "repeatable": false,
+      "component": "components.privacy-policy"
+    },
+    "copyright": {
+      "type": "customField",
+      "options": {
+        "output": "HTML",
+        "preset": "standard"
+      },
+      "customField": "plugin::ckeditor.CKEditor"
+    }
+  }
+}

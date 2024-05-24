@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_components_successes_components",
+  "info": {
+    "displayName": "SuccessesComponent",
+    "icon": "check",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "text"
+    },
+    "subtitle": {
+      "type": "text"
+    },
+    "otherSuccesses": {
+      "type": "component",
+      "repeatable": false,
+      "component": "components.button"
+    },
+    "pageTitle": {
+      "type": "string"
+    }
+  }
+}

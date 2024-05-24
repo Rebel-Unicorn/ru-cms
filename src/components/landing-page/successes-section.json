@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_landing_page_successes_sections",
+  "info": {
+    "displayName": "SuccessesSection",
+    "icon": "check",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "text"
+    },
+    "subtitle": {
+      "type": "text"
+    },
+    "ctaTitle": {
+      "type": "component",
+      "repeatable": true,
+      "component": "components.button"
+    },
+    "sectionTitle": {
+      "type": "string"
+    }
+  }
+}

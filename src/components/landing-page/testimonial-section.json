@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_landing_page_testimonial_sections",
+  "info": {
+    "displayName": "TestimonialSection",
+    "icon": "message"
+  },
+  "options": {},
+  "attributes": {
+    "sectionTitle": {
+      "type": "string"
+    },
+    "successesCTA": {
+      "type": "component",
+      "repeatable": false,
+      "component": "components.button"
+    }
+  }
+}
