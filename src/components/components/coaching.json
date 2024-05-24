@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_components_coachings",
+  "info": {
+    "displayName": "Coaching",
+    "icon": "globe",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "coachingMedia": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "title": {
+      "type": "text"
+    },
+    "subtitle": {
+      "type": "text"
+    },
+    "coachingFeatures": {
+      "type": "component",
+      "repeatable": true,
+      "component": "components.accordion"
+    },
+    "coachingCTA": {
+      "type": "component",
+      "repeatable": false,
+      "component": "components.button"
+    },
+    "pageTitle": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_components_addresses",
+  "info": {
+    "displayName": "address",
+    "icon": "earth"
+  },
+  "options": {},
+  "attributes": {
+    "url": {
+      "type": "text"
+    },
+    "title": {
+      "type": "customField",
+      "options": {
+        "output": "HTML",
+        "preset": "standard"
+      },
+      "customField": "plugin::ckeditor.CKEditor"
+    }
+  }
+}

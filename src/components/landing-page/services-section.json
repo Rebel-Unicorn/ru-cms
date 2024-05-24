@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_landing_page_services_sections",
+  "info": {
+    "displayName": "ServicesSection",
+    "icon": "cog"
+  },
+  "options": {},
+  "attributes": {
+    "sectionTitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "text"
+    },
+    "subtitle": {
+      "type": "text"
+    },
+    "servicesAccordion": {
+      "type": "component",
+      "repeatable": true,
+      "component": "components.accordion"
+    }
+  }
+}

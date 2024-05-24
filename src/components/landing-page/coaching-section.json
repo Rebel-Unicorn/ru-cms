@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_landing_page_coaching_sections",
+  "info": {
+    "displayName": "CoachingSection",
+    "icon": "handHeart"
+  },
+  "options": {},
+  "attributes": {
+    "sectionTitle": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "text"
+    },
+    "subheading": {
+      "type": "text"
+    },
+    "coachActivity": {
+      "type": "component",
+      "repeatable": true,
+      "component": "components.accordion"
+    },
+    "coachesCTA": {
+      "type": "component",
+      "repeatable": false,
+      "component": "components.button"
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "collectionName": "components_components_learn_mores",
+  "info": {
+    "displayName": "LearnMore",
+    "icon": "search",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "learnMoreMedia": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "title": {
+      "type": "text"
+    },
+    "socialMediaLinks": {
+      "displayName": "socialMedia",
+      "type": "component",
+      "repeatable": true,
+      "component": "components.social-media"
+    },
+    "addressComponent": {
+      "displayName": "address",
+      "type": "component",
+      "repeatable": false,
+      "component": "components.address"
+    },
+    "privacyPolicyComponent": {
+      "displayName": "privacyPolicy",
+      "type": "component",
+      "repeatable": false,
+      "component": "components.privacy-policy"
+    },
+    "copyright": {
+      "type": "customField",
+      "options": {
+        "output": "HTML",
+        "preset": "standard"
+      },
+      "customField": "plugin::ckeditor.CKEditor"
+    },
+    "pageTitle": {
+      "type": "string"
+    }
+  }
+}
