@@ -168,6 +168,7 @@ export interface LandingPageCoachingSection extends Schema.Component {
   info: {
     displayName: 'CoachingSection';
     icon: 'handHeart';
+    description: '';
   };
   attributes: {
     sectionTitle: Attribute.String;
@@ -175,6 +176,7 @@ export interface LandingPageCoachingSection extends Schema.Component {
     subheading: Attribute.Text;
     coachActivity: Attribute.Component<'components.accordion', true>;
     coachesCTA: Attribute.Component<'components.button'>;
+    coachingImage: Attribute.Media;
   };
 }
 
@@ -205,12 +207,14 @@ export interface LandingPageServicesSection extends Schema.Component {
   info: {
     displayName: 'ServicesSection';
     icon: 'cog';
+    description: '';
   };
   attributes: {
     sectionTitle: Attribute.String;
     title: Attribute.Text;
     subtitle: Attribute.Text;
     servicesAccordion: Attribute.Component<'components.accordion', true>;
+    servicesImage: Attribute.Media;
   };
 }
 

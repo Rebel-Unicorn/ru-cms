@@ -2,7 +2,8 @@
   "collectionName": "components_landing_page_services_sections",
   "info": {
     "displayName": "ServicesSection",
-    "icon": "cog"
+    "icon": "cog",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -19,6 +20,13 @@
       "type": "component",
       "repeatable": true,
       "component": "components.accordion"
+    },
+    "servicesImage": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }

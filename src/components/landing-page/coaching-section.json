@@ -2,7 +2,8 @@
   "collectionName": "components_landing_page_coaching_sections",
   "info": {
     "displayName": "CoachingSection",
-    "icon": "handHeart"
+    "icon": "handHeart",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -24,6 +25,13 @@
       "type": "component",
       "repeatable": false,
       "component": "components.button"
+    },
+    "coachingImage": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }
