@@ -13,11 +13,6 @@
     "subtitle": {
       "type": "text"
     },
-    "ctaTitle": {
-      "type": "component",
-      "repeatable": false,
-      "component": "components.button"
-    },
     "sectionTitle": {
       "type": "string"
     },

@@ -228,7 +228,6 @@ export interface LandingPageSuccessesSection extends Schema.Component {
   attributes: {
     title: Attribute.Text;
     subtitle: Attribute.Text;
-    ctaTitle: Attribute.Component<'components.button'>;
     sectionTitle: Attribute.String;
     successesCTA: Attribute.Component<'components.button'>;
   };
