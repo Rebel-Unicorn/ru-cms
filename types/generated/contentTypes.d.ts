@@ -1017,8 +1017,15 @@ export interface ApiTestimonialTestimonial extends Schema.CollectionType {
     name: Attribute.String;
     graduate: Attribute.String;
     specialization: Attribute.String;
-    brief: Attribute.RichText;
     image: Attribute.Media;
+    brief: Attribute.RichText &
+      Attribute.CustomField<
+        'plugin::ckeditor.CKEditor',
+        {
+          output: 'HTML';
+          preset: 'rich';
+        }
+      >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
