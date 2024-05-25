@@ -230,6 +230,7 @@ export interface LandingPageSuccessesSection extends Schema.Component {
     subtitle: Attribute.Text;
     ctaTitle: Attribute.Component<'components.button'>;
     sectionTitle: Attribute.String;
+    successesCTA: Attribute.Component<'components.button'>;
   };
 }
 
@@ -238,10 +239,11 @@ export interface LandingPageTestimonialSection extends Schema.Component {
   info: {
     displayName: 'TestimonialSection';
     icon: 'message';
+    description: '';
   };
   attributes: {
     sectionTitle: Attribute.String;
-    successesCTA: Attribute.Component<'components.button'>;
+    testimonialsCTA: Attribute.Component<'components.button'>;
   };
 }
 
