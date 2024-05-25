@@ -20,6 +20,11 @@
     },
     "sectionTitle": {
       "type": "string"
+    },
+    "successesCTA": {
+      "type": "component",
+      "repeatable": false,
+      "component": "components.button"
     }
   }
 }
