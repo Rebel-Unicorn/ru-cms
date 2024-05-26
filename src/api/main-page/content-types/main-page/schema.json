@@ -80,6 +80,50 @@
         }
       },
       "component": "landing-page.learn-more-section"
+    },
+    "CoachPage": {
+      "displayName": "CoachesPage",
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "standalon-page.coaches-page"
+    },
+    "SuccessPage": {
+      "displayName": "SuccessesPage",
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "standalon-page.successes-page"
+    },
+    "TestimonialPage": {
+      "displayName": "TestimonialsPage",
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "standalon-page.testimonials-page"
+    },
+    "NavComponent": {
+      "displayName": "Navigation",
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "landing-page.navigation"
     }
   }
 }
