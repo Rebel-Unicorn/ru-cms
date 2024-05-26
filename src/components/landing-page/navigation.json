@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_landing_page_navigations",
+  "info": {
+    "displayName": "Navigation",
+    "icon": "command"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    }
+  }
+}

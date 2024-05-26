@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_standalon_page_testimonials_pages",
+  "info": {
+    "displayName": "TestimonialsPage",
+    "icon": "check"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "text"
+    },
+    "subtitle": {
+      "type": "text"
+    }
+  }
+}

@@ -909,6 +909,30 @@ export interface ApiMainPageMainPage extends Schema.SingleType {
           localized: true;
         };
       }>;
+    CoachPage: Attribute.Component<'standalon-page.coaches-page'> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    SuccessPage: Attribute.Component<'standalon-page.successes-page'> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    TestimonialPage: Attribute.Component<'standalon-page.testimonials-page'> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    NavComponent: Attribute.Component<'landing-page.navigation', true> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

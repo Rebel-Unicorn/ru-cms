@@ -202,6 +202,18 @@ export interface LandingPageLearnMoreSection extends Schema.Component {
   };
 }
 
+export interface LandingPageNavigation extends Schema.Component {
+  collectionName: 'components_landing_page_navigations';
+  info: {
+    displayName: 'Navigation';
+    icon: 'command';
+  };
+  attributes: {
+    title: Attribute.String;
+    url: Attribute.String;
+  };
+}
+
 export interface LandingPageServicesSection extends Schema.Component {
   collectionName: 'components_landing_page_services_sections';
   info: {
@@ -246,6 +258,42 @@ export interface LandingPageTestimonialSection extends Schema.Component {
   };
 }
 
+export interface StandalonPageCoachesPage extends Schema.Component {
+  collectionName: 'components_standalon_page_coaches_pages';
+  info: {
+    displayName: 'CoachesPage';
+    icon: 'filter';
+  };
+  attributes: {
+    title: Attribute.Text;
+    subtitle: Attribute.Text;
+  };
+}
+
+export interface StandalonPageSuccessesPage extends Schema.Component {
+  collectionName: 'components_standalon_page_successes_pages';
+  info: {
+    displayName: 'SuccessesPage';
+    icon: 'monitor';
+  };
+  attributes: {
+    title: Attribute.Text;
+    subtitle: Attribute.Text;
+  };
+}
+
+export interface StandalonPageTestimonialsPage extends Schema.Component {
+  collectionName: 'components_standalon_page_testimonials_pages';
+  info: {
+    displayName: 'TestimonialsPage';
+    icon: 'check';
+  };
+  attributes: {
+    title: Attribute.Text;
+    subtitle: Attribute.Text;
+  };
+}
+
 declare module '@strapi/types' {
   export module Shared {
     export interface Components {
@@ -261,9 +309,13 @@ declare module '@strapi/types' {
       'components.typing-heading': ComponentsTypingHeading;
       'landing-page.coaching-section': LandingPageCoachingSection;
       'landing-page.learn-more-section': LandingPageLearnMoreSection;
+      'landing-page.navigation': LandingPageNavigation;
       'landing-page.services-section': LandingPageServicesSection;
       'landing-page.successes-section': LandingPageSuccessesSection;
       'landing-page.testimonial-section': LandingPageTestimonialSection;
+      'standalon-page.coaches-page': StandalonPageCoachesPage;
+      'standalon-page.successes-page': StandalonPageSuccessesPage;
+      'standalon-page.testimonials-page': StandalonPageTestimonialsPage;
     }
   }
 }

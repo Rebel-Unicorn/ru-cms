@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_standalon_page_successes_pages",
+  "info": {
+    "displayName": "SuccessesPage",
+    "icon": "monitor"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "text"
+    },
+    "subtitle": {
+      "type": "text"
+    }
+  }
+}

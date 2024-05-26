@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_standalon_page_coaches_pages",
+  "info": {
+    "displayName": "CoachesPage",
+    "icon": "filter"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "text"
+    },
+    "subtitle": {
+      "type": "text"
+    }
+  }
+}
