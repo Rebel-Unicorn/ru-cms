@@ -160,6 +160,7 @@ export interface ComponentsTypingHeading extends Schema.Component {
     subtitle: Attribute.Text;
     mainHeroImage: Attribute.Media;
     mainHeroCTA: Attribute.Component<'components.button'>;
+    applyCTA: Attribute.String & Attribute.DefaultTo<'Apply now'>;
   };
 }
 
@@ -207,6 +208,7 @@ export interface LandingPageNavigation extends Schema.Component {
   info: {
     displayName: 'Navigation';
     icon: 'command';
+    description: '';
   };
   attributes: {
     title: Attribute.String;
