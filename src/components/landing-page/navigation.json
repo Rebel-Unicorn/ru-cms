@@ -2,7 +2,8 @@
   "collectionName": "components_landing_page_navigations",
   "info": {
     "displayName": "Navigation",
-    "icon": "command"
+    "icon": "command",
+    "description": ""
   },
   "options": {},
   "attributes": {
