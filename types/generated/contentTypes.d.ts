@@ -933,6 +933,12 @@ export interface ApiMainPageMainPage extends Schema.SingleType {
           localized: true;
         };
       }>;
+    ApplicationsForm: Attribute.Component<'standalon-page.application-form'> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

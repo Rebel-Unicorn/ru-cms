@@ -124,6 +124,17 @@
         }
       },
       "component": "landing-page.navigation"
+    },
+    "ApplicationsForm": {
+      "displayName": "ApplicationForm",
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "standalon-page.application-form"
     }
   }
 }

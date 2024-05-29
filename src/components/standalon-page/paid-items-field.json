@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_standalon_page_paid_items_fields",
+  "info": {
+    "displayName": "PaidItemsField",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  }
+}
