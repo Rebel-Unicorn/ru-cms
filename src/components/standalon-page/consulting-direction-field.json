@@ -2,11 +2,15 @@
   "collectionName": "components_standalon_page_consulting_direction_fields",
   "info": {
     "displayName": "ConsultingDirectionField",
-    "icon": "server"
+    "icon": "server",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "title": {
+      "type": "string"
+    },
+    "error_message": {
       "type": "string"
     }
   }

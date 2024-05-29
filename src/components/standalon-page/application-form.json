@@ -7,23 +7,16 @@
   },
   "options": {},
   "attributes": {
-    "name": {
+    "title": {
       "type": "text"
     },
-    "wechat": {
-      "type": "string"
-    },
-    "school": {
+    "subtitle": {
       "type": "text"
     },
-    "grade": {
-      "type": "string"
-    },
-    "major": {
-      "type": "string"
-    },
-    "target_industry": {
-      "type": "string"
+    "gradeField": {
+      "type": "component",
+      "repeatable": false,
+      "component": "standalon-page.name"
     },
     "consulting_direction": {
       "displayName": "ConsultingDirectionField",
@@ -42,6 +35,41 @@
       "type": "component",
       "repeatable": false,
       "component": "standalon-page.telephone"
+    },
+    "nameField": {
+      "displayName": "name",
+      "type": "component",
+      "repeatable": false,
+      "component": "standalon-page.name"
+    },
+    "wechatField": {
+      "type": "component",
+      "repeatable": false,
+      "component": "standalon-page.name"
+    },
+    "schoolField": {
+      "type": "component",
+      "repeatable": false,
+      "component": "standalon-page.name"
+    },
+    "majorField": {
+      "type": "component",
+      "repeatable": false,
+      "component": "standalon-page.name"
+    },
+    "targetIndustryField": {
+      "type": "component",
+      "repeatable": false,
+      "component": "standalon-page.name"
+    },
+    "consultingDirectionTitle": {
+      "type": "string"
+    },
+    "paidItemsTitle": {
+      "type": "string"
+    },
+    "submitCTA": {
+      "type": "string"
     }
   }
 }
