@@ -268,18 +268,23 @@ export interface StandalonPageApplicationForm extends Schema.Component {
     description: '';
   };
   attributes: {
-    name: Attribute.Text;
-    wechat: Attribute.String;
-    school: Attribute.Text;
-    grade: Attribute.String;
-    major: Attribute.String;
-    target_industry: Attribute.String;
+    title: Attribute.Text;
+    subtitle: Attribute.Text;
+    gradeField: Attribute.Component<'standalon-page.name'>;
     consulting_direction: Attribute.Component<
       'standalon-page.consulting-direction-field',
       true
     >;
     paid_items: Attribute.Component<'standalon-page.paid-items-field', true>;
     telephoneField: Attribute.Component<'standalon-page.telephone'>;
+    nameField: Attribute.Component<'standalon-page.name'>;
+    wechatField: Attribute.Component<'standalon-page.name'>;
+    schoolField: Attribute.Component<'standalon-page.name'>;
+    majorField: Attribute.Component<'standalon-page.name'>;
+    targetIndustryField: Attribute.Component<'standalon-page.name'>;
+    consultingDirectionTitle: Attribute.String;
+    paidItemsTitle: Attribute.String;
+    submitCTA: Attribute.String;
   };
 }
 
@@ -301,9 +306,23 @@ export interface StandalonPageConsultingDirectionField
   info: {
     displayName: 'ConsultingDirectionField';
     icon: 'server';
+    description: '';
   };
   attributes: {
     title: Attribute.String;
+    error_message: Attribute.String;
+  };
+}
+
+export interface StandalonPageName extends Schema.Component {
+  collectionName: 'components_standalon_page_names';
+  info: {
+    displayName: 'name';
+    icon: 'chartBubble';
+  };
+  attributes: {
+    title: Attribute.String;
+    error_message: Attribute.String;
   };
 }
 
@@ -312,9 +331,11 @@ export interface StandalonPagePaidItemsField extends Schema.Component {
   info: {
     displayName: 'PaidItemsField';
     icon: 'bulletList';
+    description: '';
   };
   attributes: {
     title: Attribute.String;
+    error_message: Attribute.String;
   };
 }
 
@@ -335,10 +356,12 @@ export interface StandalonPageTelephone extends Schema.Component {
   info: {
     displayName: 'telephone';
     icon: 'phone';
+    description: '';
   };
   attributes: {
     title: Attribute.String;
     instruction: Attribute.String;
+    error_message: Attribute.String;
   };
 }
 
@@ -376,6 +399,7 @@ declare module '@strapi/types' {
       'standalon-page.application-form': StandalonPageApplicationForm;
       'standalon-page.coaches-page': StandalonPageCoachesPage;
       'standalon-page.consulting-direction-field': StandalonPageConsultingDirectionField;
+      'standalon-page.name': StandalonPageName;
       'standalon-page.paid-items-field': StandalonPagePaidItemsField;
       'standalon-page.successes-page': StandalonPageSuccessesPage;
       'standalon-page.telephone': StandalonPageTelephone;

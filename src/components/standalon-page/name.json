@@ -1,9 +1,8 @@
 {
-  "collectionName": "components_standalon_page_paid_items_fields",
+  "collectionName": "components_standalon_page_names",
   "info": {
-    "displayName": "PaidItemsField",
-    "icon": "bulletList",
-    "description": ""
+    "displayName": "name",
+    "icon": "chartBubble"
   },
   "options": {},
   "attributes": {
