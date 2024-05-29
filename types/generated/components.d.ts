@@ -260,6 +260,29 @@ export interface LandingPageTestimonialSection extends Schema.Component {
   };
 }
 
+export interface StandalonPageApplicationForm extends Schema.Component {
+  collectionName: 'components_standalon_page_application_forms';
+  info: {
+    displayName: 'ApplicationForm';
+    icon: 'user';
+    description: '';
+  };
+  attributes: {
+    name: Attribute.Text;
+    wechat: Attribute.String;
+    school: Attribute.Text;
+    grade: Attribute.String;
+    major: Attribute.String;
+    target_industry: Attribute.String;
+    consulting_direction: Attribute.Component<
+      'standalon-page.consulting-direction-field',
+      true
+    >;
+    paid_items: Attribute.Component<'standalon-page.paid-items-field', true>;
+    telephoneField: Attribute.Component<'standalon-page.telephone'>;
+  };
+}
+
 export interface StandalonPageCoachesPage extends Schema.Component {
   collectionName: 'components_standalon_page_coaches_pages';
   info: {
@@ -272,6 +295,29 @@ export interface StandalonPageCoachesPage extends Schema.Component {
   };
 }
 
+export interface StandalonPageConsultingDirectionField
+  extends Schema.Component {
+  collectionName: 'components_standalon_page_consulting_direction_fields';
+  info: {
+    displayName: 'ConsultingDirectionField';
+    icon: 'server';
+  };
+  attributes: {
+    title: Attribute.String;
+  };
+}
+
+export interface StandalonPagePaidItemsField extends Schema.Component {
+  collectionName: 'components_standalon_page_paid_items_fields';
+  info: {
+    displayName: 'PaidItemsField';
+    icon: 'bulletList';
+  };
+  attributes: {
+    title: Attribute.String;
+  };
+}
+
 export interface StandalonPageSuccessesPage extends Schema.Component {
   collectionName: 'components_standalon_page_successes_pages';
   info: {
@@ -281,6 +327,18 @@ export interface StandalonPageSuccessesPage extends Schema.Component {
   attributes: {
     title: Attribute.Text;
     subtitle: Attribute.Text;
+  };
+}
+
+export interface StandalonPageTelephone extends Schema.Component {
+  collectionName: 'components_standalon_page_telephones';
+  info: {
+    displayName: 'telephone';
+    icon: 'phone';
+  };
+  attributes: {
+    title: Attribute.String;
+    instruction: Attribute.String;
   };
 }
 
@@ -315,8 +373,12 @@ declare module '@strapi/types' {
       'landing-page.services-section': LandingPageServicesSection;
       'landing-page.successes-section': LandingPageSuccessesSection;
       'landing-page.testimonial-section': LandingPageTestimonialSection;
+      'standalon-page.application-form': StandalonPageApplicationForm;
       'standalon-page.coaches-page': StandalonPageCoachesPage;
+      'standalon-page.consulting-direction-field': StandalonPageConsultingDirectionField;
+      'standalon-page.paid-items-field': StandalonPagePaidItemsField;
       'standalon-page.successes-page': StandalonPageSuccessesPage;
+      'standalon-page.telephone': StandalonPageTelephone;
       'standalon-page.testimonials-page': StandalonPageTestimonialsPage;
     }
   }

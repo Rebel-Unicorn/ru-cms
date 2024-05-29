@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_standalon_page_telephones",
+  "info": {
+    "displayName": "telephone",
+    "icon": "phone"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "instruction": {
+      "type": "string"
+    }
+  }
+}

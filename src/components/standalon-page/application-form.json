@@ -1,0 +1,47 @@
+{
+  "collectionName": "components_standalon_page_application_forms",
+  "info": {
+    "displayName": "ApplicationForm",
+    "icon": "user",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "text"
+    },
+    "wechat": {
+      "type": "string"
+    },
+    "school": {
+      "type": "text"
+    },
+    "grade": {
+      "type": "string"
+    },
+    "major": {
+      "type": "string"
+    },
+    "target_industry": {
+      "type": "string"
+    },
+    "consulting_direction": {
+      "displayName": "ConsultingDirectionField",
+      "type": "component",
+      "repeatable": true,
+      "component": "standalon-page.consulting-direction-field"
+    },
+    "paid_items": {
+      "displayName": "PaidItemsField",
+      "type": "component",
+      "repeatable": true,
+      "component": "standalon-page.paid-items-field"
+    },
+    "telephoneField": {
+      "displayName": "telephone",
+      "type": "component",
+      "repeatable": false,
+      "component": "standalon-page.telephone"
+    }
+  }
+}
